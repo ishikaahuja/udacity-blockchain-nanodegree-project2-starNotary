@@ -1,4 +1,4 @@
-# TL;DR
+# Project 2 documentation 
 
 Token Name: `Star Notary Ishika Ahuja`
 Symbol: `STIA`
