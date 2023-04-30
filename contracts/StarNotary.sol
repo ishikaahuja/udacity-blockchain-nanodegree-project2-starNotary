@@ -61,27 +61,14 @@ contract StarNotary is ERC721 {
     }
 
     // Implement Task 1 Exchange Stars function
+    //added a check if the sender is the owner of _tokenId2 or _tokenId1.
     function exchangeStars(uint256 _tokenId1, uint256 _tokenId2) public {
-        address token1Owner = ownerOf(_tokenId1);
-        address token2Owner = ownerOf(_tokenId2);
-
-        require(token1Owner != token2Owner, "Both the tokens have the same Owner!");
-
-        if (_msgSender() == token1Owner) {
-            _transfer(token1Owner, token2Owner, _tokenId1);
-            _transfer(token2Owner, token1Owner, _tokenId2);
-
-            require(token2Owner == ownerOf(_tokenId1), "Token1 cannot be transferred to 2nd address.");
-
-            require(token1Owner == ownerOf(_tokenId2), "Token2 cannot be transferred to 1st address.");
-        } else {
-            _transfer(token2Owner, token1Owner, _tokenId1);
-            _transfer(token1Owner, token2Owner, _tokenId2);
-
-            require(token1Owner == ownerOf(_tokenId1), "Token1 to 1st address cannot be transferred");
-
-            require(token2Owner == ownerOf(_tokenId2), "Token2 to 2nd address cannot be transferred");
-        }
+      
+        require(ownerOf(_tokenId1) == msg.sender || ownerOf(_tokenId2) == msg.sender, "You need to own atleast one of the stars in order to exchange!!");
+        address owner1 = ownerOf(_tokenId1);
+        address owner2 = ownerOf(_tokenId2);
+        _transfer(owner1, owner2, _tokenId1);
+        _transfer(owner2, owner1, _tokenId2);
     }
 
     // Implement Task 1 Transfer Stars

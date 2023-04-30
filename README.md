@@ -1,4 +1,4 @@
-# Project 2 documentation 
+# Project 2 documentation
 
 Token Name: `Star Notary Ishika Ahuja`
 Symbol: `STIA`
@@ -161,3 +161,4 @@ Summary
 =======
 > Total deployments:   2
 > Final cost:          0.03462048 ETH
+
