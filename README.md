@@ -50,7 +50,7 @@ Compiling your contracts...
 --> project:/contracts/Migrations.sol
 
 
-> Artifacts written to D:\Users\bhuvan\Desktop\bhuvanjeet-starNotary\udacity-blockchain-developer-nanodegree-project-2-master\build\contracts      
+> Artifacts written to D:\Users\ishika\Desktop\ishikajeet-starNotary\udacity-blockchain-developer-nanodegree-project-2-master\build\contracts      
 > Compiled successfully using:
    - solc: 0.8.3+commit.8d00100c.Emscripten.clang
 

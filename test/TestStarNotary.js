@@ -22,7 +22,7 @@ it('let account1 put up their star for sale', async() => {
     var idOfStar = 2;
     var priceOfStar = web3.utils.toWei(".001", "ether");
 
-    await instance.createStar('bhuvan star', idOfStar, {from: account1});
+    await instance.createStar('ishika star', idOfStar, {from: account1});
     await instance.putStarUpForSale(idOfStar, priceOfStar, {from: account1});
 
     assert.equal(await instance.starsForSale.call(idOfStar), priceOfStar);
@@ -36,7 +36,7 @@ it('let account1 get the funds after the sale', async() => {
     var priceOfStar = web3.utils.toWei(".001", "ether");
     var balance = web3.utils.toWei(".05", "ether");
 
-    await instance.createStar('bhuvan star', idOfStar, {from: account1});
+    await instance.createStar('ishika star', idOfStar, {from: account1});
     await instance.putStarUpForSale(idOfStar, priceOfStar, {from: account1});
 
     var balanceOfaccount1BeforeTransaction = await web3.eth.getBalance(account1);
@@ -59,7 +59,7 @@ it('let account2 buy a star, if it is put up for sale', async() => {
     var priceOfStar = web3.utils.toWei(".001", "ether");
     var balance = web3.utils.toWei(".05", "ether");
 
-    await instance.createStar('bhuvan star', idOfStar, {from: account1});
+    await instance.createStar('ishika star', idOfStar, {from: account1});
     await instance.putStarUpForSale(idOfStar, priceOfStar, {from: account1});
 
     var balanceOfaccount1BeforeTransaction = await web3.eth.getBalance(account2);
@@ -79,7 +79,7 @@ it('let account2 buy a star and decreases its balance in ether', async() => {
     var priceOfStar = web3.utils.toWei(".001", "ether");
     var balance = web3.utils.toWei(".05", "ether");
 
-    await instance.createStar('bhuvan star', idOfStar, {from: account1});
+    await instance.createStar('ishika star', idOfStar, {from: account1});
     await instance.putStarUpForSale(idOfStar, priceOfStar, {from: account1});
     
     var balanceOfaccount1BeforeTransaction = await web3.eth.getBalance(account2);
