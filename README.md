@@ -7,11 +7,11 @@ Symbol: `STIA`
 
 ### Contract Address
 
-0x78eC4d2e2fBB5744aD89F66e4e990935aDdC1Ef9
+0xBc09757bf6696bA03b23da5686Db6ed3CB23C7dA
 
 ### Transaction Hash of contract deployment
 
-0xa4b7737c92c6c2c1e84cd76c6a064054c49e6afbbf7044210210b3a980a7b922
+0xe5d68f877f4c7ff7355158be451e1b4ea1cf1523dbfc73f73eba8bcbe43625bd
 
 
 ## Dependencies
@@ -29,6 +29,16 @@ Web3.js v1.2.9
 ```
 
 ## Command Line Information:
+
+
+PS C:\Users\isahuja\Desktop\udacity-blockchain-nanodegree-project2-starNotary-main\udacity-blockchain-nanodegree-project2-starNotary-main> truffle migrate --network sepolia
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module './uws_win32_ia32_83.node'
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
 
 Compiling your contracts...
 ===========================
@@ -50,7 +60,7 @@ Compiling your contracts...
 --> project:/contracts/Migrations.sol
 
 
-> Artifacts written to D:\Users\ishika\Desktop\ishikajeet-starNotary\udacity-blockchain-developer-nanodegree-project-2-master\build\contracts      
+> Artifacts written to C:\Users\isahuja\Desktop\udacity-blockchain-nanodegree-project2-starNotary-main\udacity-blockchain-nanodegree-project2-starNotary-main\build\contracts
 > Compiled successfully using:
    - solc: 0.8.3+commit.8d00100c.Emscripten.clang
 
@@ -67,10 +77,10 @@ Migrations dry-run (simulation)
 
    Deploying 'Migrations'
    ----------------------
-   > block number:        3321383
-   > block timestamp:     1681926826
+   > block number:        3411803
+   > block timestamp:     1683128485
    > account:             0x1Cb49a614297c0464ecDC17AEdF8Af618558C9AA
-   > balance:             0.96191476
+   > balance:             0.89347295
    > gas used:            271700 (0x42554)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -85,22 +95,22 @@ Migrations dry-run (simulation)
 
    Deploying 'StarNotary'
    ----------------------
-   > block number:        3321385
-   > block timestamp:     1681926833
+   > block number:        3411805
+   > block timestamp:     1683128491
    > account:             0x1Cb49a614297c0464ecDC17AEdF8Af618558C9AA
-   > balance:             0.92956182
-   > gas used:            3189356 (0x30aa6c)
+   > balance:             0.86341402
+   > gas used:            2959955 (0x2d2a53)
    > gas price:           10 gwei
    > value sent:          0 ETH
-   > total cost:          0.03189356 ETH
+   > total cost:          0.02959955 ETH
 
    -------------------------------------
-   > Total cost:          0.03189356 ETH
+   > Total cost:          0.02959955 ETH
 
 Summary
 =======
 > Total deployments:   2
-> Final cost:          0.03461056 ETH
+> Final cost:          0.03231655 ETH
 
 
 
@@ -117,13 +127,13 @@ Starting migrations...
 
    Deploying 'Migrations'
    ----------------------
-   > transaction hash:    0x16028d7865a586feba2dad607bddb449e432c0720f915e58b5dcd135b0db7a1c
-   > Blocks: 1            Seconds: 10
-   > contract address:    0x0f62f57A000Fe190Bafa05984CC799b963ADba3c
-   > block number:        3321390
-   > block timestamp:     1681926852
+   > transaction hash:    0x9c7c451918bc702f12095d9174dacc32af1be42922fe1d6346b348dd8fe16450
+   > Blocks: 2            Seconds: 17
+   > contract address:    0x16b342fb1D410a4Aa303db79e51bCCB6f0e95278
+   > block number:        3411811
+   > block timestamp:     1683128520
    > account:             0x1Cb49a614297c0464ecDC17AEdF8Af618558C9AA
-   > balance:             0.96191412
+   > balance:             0.89347231
    > gas used:            271764 (0x42594)
    > gas price:           10 gwei
    > value sent:          0 ETH
@@ -140,25 +150,25 @@ Starting migrations...
 
    Deploying 'StarNotary'
    ----------------------
-   > transaction hash:    0xa4b7737c92c6c2c1e84cd76c6a064054c49e6afbbf7044210210b3a980a7b922
+   > transaction hash:    0xe5d68f877f4c7ff7355158be451e1b4ea1cf1523dbfc73f73eba8bcbe43625bd
    > Blocks: 2            Seconds: 17
-   > contract address:    0x78eC4d2e2fBB5744aD89F66e4e990935aDdC1Ef9
-   > block number:        3321393
-   > block timestamp:     1681926888
+   > contract address:    0xBc09757bf6696bA03b23da5686Db6ed3CB23C7dA
+   > block number:        3411814
+   > block timestamp:     1683128556
    > account:             0x1Cb49a614297c0464ecDC17AEdF8Af618558C9AA
-   > balance:             0.9295519
-   > gas used:            3190284 (0x30ae0c)
+   > balance:             0.86340476
+   > gas used:            2960817 (0x2d2db1)
    > gas price:           10 gwei
    > value sent:          0 ETH
-   > total cost:          0.03190284 ETH
+   > total cost:          0.02960817 ETH
 
    > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
-   > Total cost:          0.03190284 ETH
+   > Total cost:          0.02960817 ETH
 
 Summary
 =======
 > Total deployments:   2
-> Final cost:          0.03462048 ETH
+> Final cost:          0.03232581 ETH 
 
