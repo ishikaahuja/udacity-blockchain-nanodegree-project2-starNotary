@@ -143,3 +143,4 @@ it('lookUptokenIdToStarInfo test', async() => {
 
     assert.equal('Test star Last', await instance.lookUptokenIdToStarInfo.call(19))
 });
+
